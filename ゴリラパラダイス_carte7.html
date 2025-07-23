@@ -1,0 +1,689 @@
+<!doctype html>
+<html lang="ja">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0">
+	<title>ゴリラパラダイス_carte7</title>
+<style>
+*{margin:0;padding: 0;font-size: 14px;font-family : 'メイリオ',Meiryo,Osaka,'ヒラギノ角ゴ Pro W3','Hiragino Kaku Gothic Pro','ＭＳ Ｐゴシック','MS PGothic',sans-serif;}
+body{width: 100%;margin: 0;padding: 0;background-color: #f7f7f7;position: relative;}
+a{color: #666666;}
+a:hover{color: #CD0000;}
+h1{font-size: 21px;color: #666666;margin: 0px;padding: 0px;border-bottom: 1px solid #CCCCCC;}
+h2{font-size: 16px;color: #666666;margin: 5px;padding: 50px 0 0 0;border-bottom: 1px dotted #CCCCCC;}
+label{transition: all 0.2s;}
+#toggle{display: none;}
+#label_toggle{display: block;width: 100px;text-align: center;padding: 0;border: 2px solid #CD0000;background-color: #FFFFFF;color: #CD0000;border-radius: 15px;position: fixed;top: 10px;right: 10px;z-index: 1005;}
+#label_toggle:hover{background-color:#CD0000;color:#FFFFFF;}
+header{display: block;width: 0px;height: 100%;position: fixed;background-color: #FFFFFF;border-left: 1px solid #CCCCCC;z-index: 2;top: 0;right: 0;overflow-y: auto;overflow-x: hidden;transition: all 0.2s;padding: 50px 0 0 0;box-sizing: border-box;}
+#toggle:checked + header{width: 200px;}
+header label{display: block;width: 180px;margin:0 5px;padding: 5px;border-bottom: 1px dotted #EFEFEF;}
+header label input[type="checkbox"]{margin-right: 5px;}
+label:hover{cursor:pointer;background-color: #EFEFEF;}
+.wrapper{display: block;width: calc(100% - 30px);max-width: 1100px;padding: 30px 15px 100px 15px;margin: 0 AUTO;overflow: hidden;position: relative;background-color: #FFFFFF;}
+/* ログ部分 */
+dl{display: block;margin: 0;padding: 3px;box-sizing: border-box;}
+dl::after{display: block;content: "";clear: both;}
+dt{display: block;font-size: 0.8em;font-weight: bold;float: left;width: 100px;margin: 0;padding: 5px 5px;text-align: right;white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+dd{display: block;width: calc(100% - 120px);margin: 0;padding: 2px;float: right;line-height: 1.8em;}
+.zatsudan{width: 95%;margin: 0 0 0 AUTO;background:#f7f7f7;border-left:1px solid #CCCCCC;}
+.other{background-color:#fff7ef;}
+.secret{width: 98%;margin: 0 0 0 AUTO;border-left:3px solid #CCCCCC;}
+.group{background:#f9f9f9;border-left:1px solid #CCCCCC;}
+@media (max-width:480px){
+  dt{display: inline-block;float: none;width: calc(100% - 6px);margin: 0;padding: 3px 0 0 3px;text-align: left;}
+  dd{display: inline-block;width: calc(100% - 6px);padding: 3px;float: none;}
+}
+</style>
+<style>
+.tab_0{}
+.tab_0.selected{display: none;}
+
+</style>
+</head>
+<body>
+<label for="toggle" id="label_toggle">表示/非表示</label>
+<input type="checkbox" name="toggle" id="toggle">
+<header>
+<label>▽ 非表示にするタブ</label>
+<label for="main"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="main">メイン</label>
+<label for="zatsudan"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="zatsudan">雑談</label>
+<label for="tab_0"><input type="checkbox" onClick="Hide(this)" class="checkbox" id="tab_0">情報</label>
+</header>
+<div class="wrapper">
+<h1>ゴリラパラダイス_carte7</h1>
+<h2 id="day1">ゴリラパラダイス_carte7</h2>
+
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ウホホイウホホイ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>ウホウホゴリ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>ウホホ～～ン </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>ウホリウム </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>ウッホンウホホ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>少々お待ちバナナを　ウホートゥースキーボードが反応しねえゴリ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>バナナン皮の有線キーボードをゴリラ便でお届けしてえゴリな… </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>バナナの筋のように繋がっていると安心ゴリな </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>おのれウホートゥース… </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>OK～なんとかなったゴリ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>おかえりウホ～ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>この隙に過去ログをチラリ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>さすゴリ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>殺の感情しか覚えてねぇゴリね </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>今宵の聖剣エクスカリバナナは血に飢えているゴリ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>それは魔剣ゴリ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ハッ </dd></dl>
+<br>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>みんなァ！！　丸太（バナナの木）は持ったか！！　行くぞォ！！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ウホホイ！！！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ウホホ～～～～イ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ウッホォオー </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ウホッホイ！！！！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではゴリラ実験卓第バ7回がはじまるゴリ～皆殺しのゴレヴュー……開幕ゴリ…… </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>わかるウホ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>バ7回　縁起がいいゴリね </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリ神の加護を感じるウホな </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ほんとゴリ🍌ウホホイ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>さて、前回はウホーデスが出てきたところでシーンが閉じちゃった感じの流れ　そして、次のシーンがはじまるのです </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>響け！ドラミング </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ちな、このシーンは長いので今回はこの1シーンで終了する予定ゴリ！　よろゴリ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ウホ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>長いバナナをしっかり味わうウホね～！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>かしこまりかしゴリ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>噛みしめるウホ～～ </dd></dl>
+
+<h2 id="day1">ミドルゴリラ7：トップ・オブ・マウント</h2>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>では、シーンを開始するゴリ～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>みんなの姿におびえるゴリラたち、その中から歩み出たウホーデス…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「さあ、皆は森の奥へ避難するウホ。彼らはワシが相手をするゴリ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ほかのゴリラ</dt><dd>「せやかてウホー！」<br>「ほんまかいなウホー！」<br>「もろたでウホー！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「いいから行くゴリ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ウホーデスの一喝により、ゴリラたちは森の奥へと逃げていった…… </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいい三兄弟がいる </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>西の三兄弟 </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>「そうはいうてもウホ～！」しちゃうん </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>うほっこり </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>そして、君たちの眼の前には、今となってはひどく小さく見える一匹のゴリラ……ウホーデスだけが残された。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>何かRPしますか？　しなければ進めます </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「ウホーデス……」なんとも言えない表情？で見つめる </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「俺たちが…分かるウホか…？」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ボス…こんな姿してるけどこいつはタケシなんだ…」（バイクの姿） </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>バイクだったｗｗｗ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ｗｗｗｗｗｗ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ﾄﾞｩﾙﾝﾄﾞｩﾙﾝ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「そうウホ！タケシゴリ！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>「……わかっておるゴリ。お前たちはミワにヤマト、ガレアーノ、そして……うん。まああの、信じるゴリ。お前はタケシ？　ゴリ？？」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ボスしっかりして </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>自信持って </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>これでタケシって解るボス、マジでボスの器 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ほんと </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>その言葉にタケシの面影を取り戻すウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「そのような姿になっても、よく正気を失わずに戻ってきたゴリ……」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「そう、変わったのは姿のみウホ…………」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ちょっとヤマトが殺意に目覚めちゃったウホけど </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>些細な事ウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>タケシが目覚めるはずだったんだけどな </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>不思議 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「であれば……もはやお前たちは知ってしまったゴリな。ワシの罪を……」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「罪……」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「どういうことゴリか？」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>わかってない </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ラダマンに協力したのも理由があったンだろ。なあ……？」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「やはりウホーデスはわかっていたウホか。この森の真実を」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「なに！？知っていたゴリか？？？？」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「あることをすることによる罪もあるが……しないことによる罪もある……訳を聞かせて欲しいゴリ…………」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「なんで教えてくれなかったゴリー！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>タケシだけおいてかれとるｗ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>置いてけぼりタケシ解釈一致でOKですの顔 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいい </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>わかりて </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>ラダマンポエム2を読めタケシ～ッ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>長い文章は大体しか読めないゴリ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>長い文章は5文字でまとめて欲しいウホな </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>5文字ならなんとか </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>悪いゴリラ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ゴ文字でまとまった、叡智を感じるまとめウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「そう、ワシは、ニンゲンたちのゴリラを使った実験を知りながら、それに加担していたゴリ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「ワシは、多くの仲間を売って、知らぬふりをしてきたゴリ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「到底許されることではないゴリ……すまぬ……すまぬゴリ……」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「……ああ。エネゴリから連絡が来なくてボスに相談したときも」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「『便りがないのは元気な証拠』だって言ってくれたのは……そういうワケだったのかい……」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「ウホーデス。こいつらが聞いてるのは謝罪じゃねぇゴリ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「アンタが「どうして」そうしたのか……その想いをアンタの口から聞かせてくれ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「こんなものじゃ、想いまではわからねぇゴリ」ラダマンポエムを片手にひらひら </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「……敵わなかった。ワシには敵わなかったゴリよ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「ワシもまた事実を知った時、なりふり構わずニンゲンたちに襲いかかったウホ……しかし、あの時怪物と化してしまったワシの息子はおろか、ニンゲンの持つ道具の力にさえ敵わなかったゴリ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「それほどまでにワシは衰えていた……いや、牙を抜かれていたゴリ……ニンゲンたちが造った、偽りのParadiseに……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「ワシだけではない……ワシらみな、ニンゲンたちに歯向かう力はなかった……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「だから、ワシはゴリラの誇りを捨て……ニンゲンたちの傍若無ゴリに見て見ぬゴリを決めてきたウホ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「仮初の平和を守る……ただそれだけのために……」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「…………ウホーデス…………」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「無知もまた罪…………俺たちも同罪だったウホ」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「ボスも怒って暴れた。でも敵わなかったからせめて群だけでも守ろうとした。ボスはそれでいいゴリ。今度は俺たちが怒った。だから俺たちが暴れるだけウホ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「……いいや……いいや、ワシは許されぬことをしたウホ。そう、ミワ……お前にはワシに復讐する権利があるゴリ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「ミワ、お前の言う通りゴリ。ワシはお前に偽りのなぐさめの言葉をかけたゴリ。しかしそれは、エネゴリの奴にも同じ……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「エネゴリに、ドウブツエンなぞという幻想を吹き込んだのはワシなのだから……」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「……そうかい。なら、一発かましてやらないと気が済まないね」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ロケパンと化した片腕を構える </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「……そうゴリ。すべてはワシの愚かな自ゴ満足のためゴリ……」　目を閉じる </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリマス～！このシーンでゴリラ射撃って使ってもいいゴリ？ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ワァ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>うける　いいよ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>いいんか～い </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>射つゴリか！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>では失礼して。<br><br>▼【ゴリラ射撃】１セッションGCL回/行動フェイズ/コストなし/武器攻撃をする。【武器命中】+0【ダメージ】2D6+(GCL×3)－【野生】／自分の行動順番開始時にバナナ5本を消費すると回数制限をGCL回に戻すことができる。 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>えっえっ？ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>対象はウホーデスの横に生えてる木 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>おっ…？ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>わあ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>どうぞ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>かましたれぇ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>G+7　武器攻撃命中判定/命中がゴリティカル成功時はダメージに【力】を追加 (2D6+7) ＞ 8[2,6]+7 ＞ 15</dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>動かない木にはそのまま命中するであろう！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ウホーデスの横にあった木が木っ端みじんに砕け散る。きっとニンゲンが持ってきた木が根付いちゃった奴だよ多分 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>いいですねぇ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ニンゲン達の傍若無ゴリに目をつぶったのがボスの罪なら」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「罰はもう十分に受けただろ？アンタは長い間、苦しんでたんだからサ……」 </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>ｳｵ~~~~~~~ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かっけえ～～～～ッ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>さすがにこれはバナナロールどうぞ！！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>1d6 　やっふ～いバナナロール (1D6) ＞ 3</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ ゴリ・ラ・ミワ ] バナナ : 63 → 66 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「殺ったかと思ったゴリ～（小声）」 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>ヤマトなら殺ってる </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>さすがミワ姐さんやで </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ミワの発言に深い頷き(冷や汗を拭いながら) </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「……ミワよ、お主は優しすぎるゴリ……」　眉間に深いシワが刻まれるゴリ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>すげえ頭（今更） </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>自分でやったんだろ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「アンタが戦って、あたし達を撃退したんだって群れの皆を安心させてやっておくれ。そいつがいい証拠だろ？」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>クレーターになった木の跡を指して肩をすくめるウホ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>かっけー </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「……この上まだ、このようなワシに群れを治めよというゴリか……いや、償いなど、そうした形でしかできぬのかもしれぬゴリな……」 </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ウホーデスもつれえ立場よ…… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「あんたはどうするウホか？」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「俺たちの前に出てきたのは、謝罪のためだけウホか？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「……本当は、お前たちの中の誰かに群れを任せようとしたウホ。もはや、ワシにその資格はないとな……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「だが、お前たちはまだ戦いを続けねばならぬ、そうゴリな？」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ゆったりとうなずく </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「忙しくてボスしてる暇なんてないゴリな」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「………………ああ」深く頷く </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>ウホーデスもまた頷く「群れのことは任せるゴリ。ゴリフェも手当てしておくウホ……」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「……それは今の俺達には出来なくて、ウホーデスにしかできないことウホ」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「…………………頼むゴリ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「あんたは、誇りをなくしたりなんかしてねぇゴリ。守ろうとしたのは、ゴリラの心……」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「たとえ仮初の平和だとしてもそれを守る道を選んだ……ただそれだけウホ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「ヤマト……。身勝手な願いを承知だが、ゴリュを、お主の手で、救ってやってほしいゴリ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「…………救えると、そう思うゴリか？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「ワシに未来のことなど口にはできぬゴリ……だが、お主の魂はまだ燃え尽きていないはずゴリ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「……」みしみしとナックルが音を立てる </dd></dl>
+<dl style="color:#888888" class="main"><dt>ウホーデス</dt><dd>「その心がある限り……お主は戦えるはずゴリよ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>？</dt><dd>「い～～や、戦いはここでジ・エンドGORYYYYY！！！」 </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>ｯﾊ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>なんか出てきた </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>なにぃ～～～ッ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>下卑た声が聞こえたその次の瞬間、ウホーデスは何者かに殴り飛ばされ、木を薙ぎ倒しながら紙のように吹き飛んでいった……！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「…………！」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ボスーーー！？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>彼を攻撃したのは……どことなく見覚えのあるゴリラウェポン……！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴヒャァ！！　オレだよ、ゴリベロだよォ！！　"芭蕉（バナナ）"食ってそんなことも"忘却（わす）"れちまったゴリィ～！？」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいいじゃん </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>だろ </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>正直めっちゃかわいい </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「！？」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「……………！！！！！」 </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>昔のマガジンで連載されてそう </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴヒャヒャヒャヒャ！！　ゴリラがバナナ食った顔ってのはこういう顔ゴリねぇ～～！！」 </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ありそうすぎて森生える </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>ちょっとかわいくて言葉が紡げないが？？？ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>変な刺さり方しちゃったよ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>Gウェポン・ゴリベロ</dt><dd>うける　めっちゃ愛されてんじゃん </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「……？」小首をかしげる </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「難しいことは分かんねえけどお前が間違ってることだけは分かるウホ。ゴリラがバナナ食った顔はもっと自由で幸せそうな顔ゴリよ！」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「…………元々こういう顔だ」憂いを帯びた表情を見せる </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>誰もウホーデスの心配してなくてうける </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ゴリベロォ！アンタ、自分が何してるか"理解（わか）"ってンのかい！」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>こんなことでくたばるボスならボスの価値ないんで…… </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ほら、眼前の脅威が… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>あの程度の一撃でくたばらないという信頼の証なので… </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>きみたち生身でゴリラウェポンに殴られて一回死んでるんやで </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>憂いは帯びてるよぉ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「"理解"ってるよミワよぉ！！　ゴヒャヒャヒャ！！　オレは元々ボスのくだらねぇ"訓練（ブーキャン）"が大嫌いだったウホォ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ニンゲンたちのおかげで！　訓練なんぞしなくても、オレはラクしてあっさり強くなれたゴリィ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ニンゲンには"感謝（リスペクツ）"しかねぇゴリなァ！！　ゴヒャヒャヒャヒャヒャッ！！」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「元気そうゴリな」 </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリベロが忍極系ゴリラにリブートされるなんて誰が想像しただろう（反語） </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>Gウェポン・ゴリベロ</dt><dd>幻想（ユメ）じゃ……ねぇよな……！？ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいいねぇ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「一回元気じゃなくさせたほうが良さそうウホ」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ああ。どうも悪い"遊戯（あそび）"ってやつを覚えちまったみたいだからね」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「満足は努力の中にあって、結果にあるものではないゴリ…………………お灸を据えてやる必要があるウホ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「一応聞くが、何しに来たゴリ？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「もっちろん、ラダマンの野郎に協力してお前らを"始末（シメ）"にきたに決まってるゴリよォ～～」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「ゴリベロのやりたいことはそれウホか？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「当たり前ウホォ～～～！！　逆に何が気に入らねぇゴリ？？　こんな力を手に入れたのに、"愉悦（たの）"しまなくてどうするゴリィ～～？？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「お前らだって！！　弱ザコのニンゲンどもをなぎ倒した時気持ちよかっただろォ～～～！？」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「なるほどな、わかりやすくて助かるウホ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>フ、と笑う </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴヒャヒャヒャ！！　気に入らねぇなぁ～～、オレぁ強いフリってヤツが一番嫌いゴリからねぇ～～」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「自分より弱いやつと戦って何が楽しいゴリ？（本当にわからない顔）」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「何いってんだかわかんねぇゴリが、とりあえず元気そうでよかったゴリ」 </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ヤマトさんマジで今のゴリベロが言ってること意味不明なんだろうなと思うと森 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「気に入らねぇと言ったな。どちらが強いか…今すぐにわかるウホ」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「「愉悦」のための強さもまた強さなのか……拳で語ればいい」 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>たのしそうでよかったな～って思っています </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴヒャヒャヒャ！！　だったら"最強（ゼンイチ）"のゴリラであるオレが教えてやるゴリ！！　今、誰が"頂点（ボス）"なのかをなぁ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「この"軟弱猿（シャバゴリ）"どもがァ～～～～ッ！！」 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいいねぇ～～～～～ッ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ということで戦闘開始ゴリ！ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>嫌いじゃないぜ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>どちらがチキってるゴリラか白黒つけるウホな～ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>想定にない気に入られ方してる </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>ヤマトはコイツたのしそうだからいっかぁ～～の気持ち </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>敵はGウェポン・ゴリベロ1体 </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>めちゃかわいい😊 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>癒しだよね </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>戦闘開始フェイズといくゴリよ～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ホイ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ウホ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ウホホイ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>スキルある者！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ウホイ！ドラミング！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>あ、その前に </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ン？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>まずはこいつのパッシブスキルを紹介せねばならぬだろう…… </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ほう…… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>な、なにィ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>お </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>何ッ？！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>【バナナイーター】<br>常時発動。<br>敵のゴリラスキル発動時、消費バナナを+2する。 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>わあ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>食いしん坊だ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ということで、消費バナナが常に+2されるゴリ！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいいね </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ﾝﾜｧ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>なので、戦闘開始フェイズで使用するゴリラスキルも+2消費してほしいゴリ～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ホーイ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ウホホイ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>では<br>▼【ドラミング】戦闘開始フェイズ/バナナ2/最初のラウンドのみ、対象のPG１匹と自分PGが行う「行動値決定以外」のあらゆる判定の達成値を+5にする </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>対象はタケシ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ ゴリ・ラ・ミワ ] バナナ : 66 → 62 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>じゃあこちらはガレアーノへ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ ヤマト ] バナナ : 62 → 58 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ウホー！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>サンクスバナナ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>スキル使用なし！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>OK！　ではこちらもスキル使用 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>【オーバナーナ・ドーズ】<br>戦闘開始フェイズで宣言。<br>危険な劇バナナを大量摂取してパワーアップを図る。<br>このラウンド中のダメージロールに+3。 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいいね～ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>つよい </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>バナナ中毒患者に </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>後から反動あるやつでは </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>後先考えないゴリラウホね…！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>禁断症状が出ちゃう… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>自己責任なので… </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>なんかぁ……なにやってもかわいいね～になっちゃう…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではバナナをもりもり食べて強くなったところで行動順番決定フェイズ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>みんなで1d6+野性を振ろう </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>1d6+4 【行動順決定】 (1D6+4) ＞ 6[6]+4 ＞ 10</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>1D6+2　【行動順決定】 (1D6+2) ＞ 1[1]+2 ＞ 3</dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>1D6+4 (1D6+4) ＞ 4[4]+4 ＞ 8</dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>1d6+8 (1D6+8) ＞ 6[6]+8 ＞ 14</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>S1d6+4 (1D6+4) ＞ 4[4]+4 ＞ 8</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>みんなイニシアチブのところに数値いれといてゴリ～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>やっぱバイク早いな </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>では行動フェイズ！　タケシから！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ぶぉん </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>まずは怒りのメガトンパンチウホ！ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>ちなみに、ふつうに戦闘中でも0時前になったら区切らせていただくゴリ～！　よろゴリ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ タケシ ホンゴ ] バナナ : 42 → 39 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>ウィ～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>タケシ！　消費バナナ+2ゴリ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>そうだった。くいしんぼうめ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ タケシ ホンゴ ] バナナ : 39 → 37 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ふところからパクって食べているゴリ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>G+6 命中 (2D6+6) ＞ 6[5,1]+6 ＞ 12</dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリリン！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>では回避！ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>ウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+3 回避 (2D6+3) ＞ 8[4,4]+3 ＞ 11</dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>ノ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>命中-2だったウホ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>10で </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>あ、じゃあギリギリ回避！！　-2さえなければ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>いや、ドラミングの効果で+5っす </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>全てを忘れている </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>草　じゃあ命中です </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ナイスドラミング！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>15で！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>命中！　ダメージどうぞ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>リズムに乗ったタケシの一撃 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>コンビネーションが光る！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ヒュー！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>1d6+10+5 ダメージ (1D6+10+5) ＞ 3[3]+10+5 ＞ 18</dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「これはボスの分ウホ！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>あ、待った　ダメージの内訳教えてほしいゴリ！　ごめんゴ！ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>そういえばガレアーノに力下げてもらうの忘れてたな </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>1d6+6(筋力)+4(メガトン)+5 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>（ゴリボーグ） </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>なるゴリ！　OKゴリ！　では18ダメージ </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>様子見で使わなかったけど、入れといた方がよかったかなー！次入れるか！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 0 → 18 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「タケシィィ～！！　うぜぇこと言ってないで楽しむゴリよォ～～！！」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「だったらゴリベロが楽しませてみせるウホ！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>いいぞ～　バナナロールどうぞ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>せんきゅー </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>1d6 バナナロール (1D6) ＞ 3</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ タケシ ホンゴ ] バナナ : 37 → 40 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>では次はガレアーノ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>………………俺にはこの拳のみ。素手攻撃！ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>まぁでもバナナ食うからな～はある </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>▼ズーム、ゴリパンチ｜常時｜回数制限なし｜コストなし｜<br>素手攻撃時、対象となった相手は回避の判定値に－１される。また、このゴリ技を持つゴリラは、あらゆる射程を55ｍ以上にしてもよい（ＧＭが設定する、シーン内限定とし、シーンから出るような場合は無効となる） </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>OK！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>G+4+5 【素手攻撃判定】+ドラミング効果 (2D6+4+5) ＞ 10[6,4]+4+5 ＞ 19</dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>たけえ～～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>つよ～ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>つよい </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>すべてを粉砕してくれ～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+3-1 回避 (2D6+3-1) ＞ 5[1,4]+3-1 ＞ 7</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>命中！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>1d6+4 【ダメージロール】 (1D6+4) ＞ 4[4]+4 ＞ 8</dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 18 → 26 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「お前が黙るまで………………殴るのを止めないゴリ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴヒャハァ！！　しゃしゃり出てくるんじゃねぇゴリ！！　ガレアーノォ！！」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「ﾌｯ………………しゃしゃり出ているのはどちらか、はっきりさせるウホ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではゴリベロが動く！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「"差（レベチ）"ってヤツを教えてやるゴリよォ！！」 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいいねぇ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>botになっちまう </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>【アクセル・ゴリラ】<br>行動フェイズに宣言。<br>肉体の限界を超えた速度で瞬時に全ての敵を攻撃するスキル。<br>敵全体に素手攻撃を行う。<br>ただし、使用後にHPを-10する。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ということで全員対象ゴリ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>おお </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいいな </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ほう </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>おおお </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+6 【筋力】 (2D6+6) ＞ 3[1,2]+6 ＞ 9</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>は？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>やるきある？ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ん？ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>これは…？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>目標値9です　【筋力】で振ってください </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>薬（バナナ）切れ……？ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>G+6+5&gt;=9 (2D6+6+5&gt;=9) ＞ 8[3,5]+6+5 ＞ 19 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd> </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>G+3+5&gt;=9 【回避】 (2D6+3+5&gt;=9) ＞ 10[6,4]+3+5 ＞ 18 ＞ 成功</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>G+3&gt;=9　【筋力】回避判定 (2D6+3&gt;=9) ＞ 3[1,2]+3 ＞ 6 ＞ 失敗</dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>みんなドラミングぶんいれてね～ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>G+6&gt;=9 回避 (2D6+6&gt;=9) ＞ 9[4,5]+6 ＞ 15 ＞ 成功</dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>忘れてたけど避けた </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>あっ、+5なので達成値11で回避成功っす </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>では全部当たらなかった！　ダメージを受けます </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 26 → 36 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではヤマトのターン！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ハンマーヘッドゴリラするか～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>命中-6、ダメージ+10 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>素手攻撃します～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>OK～ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>一瞬席を外すけど続けといてほしいウホ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>ウホホイ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>いてらウホ！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>G+6-6+5 (2D6+6-6+5) ＞ 7[4,3]+6-6+5 ＞ 12</dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>あってるっけ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>ゴリマス</dt><dd>ていうかヤマトと同値だったからヤマト先だったゴリ……すまんゴリ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいかったからいいよ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ ヤマト ] バナナ : 58 → 48 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ハンマ乗せなので大丈夫と思うウホ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ありがとウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>大丈夫ゴリな </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+3 回避 (2D6+3) ＞ 5[2,3]+3 ＞ 8</dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>命中！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>よ～し </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ゴリマスのダイスが腐りバナナ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>たすかる </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>よしよし！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリベロだって心の底では戦いたくないウホな…（中のゴリラは幻覚を見ています） </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>1d6+6+10+5 (1D6+6+10+5) ＞ 6[6]+6+10+5 ＞ 27</dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>中のゴリラ修正じわじわきたウホ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>あは </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>身も心もゴリラたれ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>すげ～～ッ </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>ゴリラたれ…！ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>ただいまウホ </dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>おかゴリ～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>固定値内訳筋力6、ハンマーヘッド10、ゴリボーグ5です </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>目からバナナ出た </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 36 → 63 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>これにはバナナの皮も自動で剥けちゃった </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>さらにハンマーヘッドの効果で次の判定-2の修正！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ヨロ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>OK！ </dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>おかウホ～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではミワのターンかな～ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>▼【ゴリラ射撃】１セッションGCL回/行動フェイズ/コストなし/武器攻撃をする。【武器命中】+0【ダメージ】2D6+(GCL×3)－【野生】／自分の行動順番開始時にバナナ5本を消費すると回数制限をGCL回に戻すことができる。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>対象はゴリベロ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>G+7+5　武器攻撃命中判定（ドラミング乗せ）/命中がゴリティカル成功時はダメージに【力】を追加 (2D6+7+5) ＞ 9[6,3]+7+5 ＞ 21</dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ヤマトはたのしいかもしれないな </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリラ射撃の回数はウホーデスに使った分もまとめて減らすウホな </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ ゴリ・ラ・ミワ ] ｺﾞﾘﾗ射撃回数 : 3 → 1 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>でかいな～ッ　射撃ということは【力】判定ゴリな？ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ウホウホ！（うすうす！のアクセント） </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+3-2 回避 (2D6+3-2) ＞ 9[6,3]+3-2 ＞ 10</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>-2しつつもいい出目だったけど刃が立たない！　命中！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>2D6+(5*3)-2　ダメージロール (2D6+(5*3)-2) ＞ 10[5,5]+(5*3)-2 ＞ 23</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>つええ……　しかしここでスキル発動！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>おっ…？<br> </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>な、なんだって～！？ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ﾋｭｳ！　ﾝﾅ！？ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>なに？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>【"頂点"の意地】<br>ダメージを受けた際に宣言。<br>ボスを名乗るゴリラの意地でライバルに負けない力を見せる。<br>敵の判定に使用した能力値が【力】【野性】の場合のみ発動できる。<br>敵のダメージを半分にする（小数点以下切り上げ）。<br>ラウンドにつき一度だけ使用できる。 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ほーん </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ということで、ダメージ半減するゴリ！！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>やるじゃ～ん </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>おもろいスキル持ってるウホな～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>12かな </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ハッ！大口叩く割に児戯（ヌルゲー）だと思ったら根性みせてきたじゃないか！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 63 → 75 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>やるな……！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴヒャハァ！！　当たり前ゴリ！！　お前とタケシにだけは！！　"断固（ゼッテェー）"負けねぇゴリよォ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ということで見てわかるとおりミワ・タケシ狙い撃ちなスキルでした </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>かわいい～～～ッ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいいね～～～～～～～ッッッ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>意識されてる～ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ゴリベロ❤下剋上して❤　うちわ振らなきゃ… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>んでは、ふたたび行動順番決定フェイズ！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>S1d6+4 行動順決定 (1D6+4) ＞ 4[4]+4 ＞ 8</dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>1d6+8 (1D6+8) ＞ 4[4]+8 ＞ 12</dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>1d6+4 【行動順決定】 (1D6+4) ＞ 2[2]+4 ＞ 6</dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>1D6+2　【行動順決定】 (1D6+2) ＞ 3[3]+2 ＞ 5</dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>1D6+4 (1D6+4) ＞ 6[6]+4 ＞ 10</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>タケシの速さは異常　反映しておいてゴリ！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>固定値がおかしいんよ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>疾風！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>高速道路走れるウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>意外と5が出ないんだよなぁ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではタケシ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>もういっちょメガトンパンチウホ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>怒りのメガトンパンチ  命中-2 ダメージ+4 3バナナ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ タケシ ホンゴ ] バナナ : 40 → 35 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>タケシ、パンチでも戦えんだよなぁ～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>器用なんだよね　バイクなのに </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ゴリベロごときに野生は必要ないゴリ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>G+6-2 命中 (2D6+6-2) ＞ 7[6,1]+6-2 ＞ 11</dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>きびしいかも </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>G+3 回避 (2D6+3) ＞ 3[1,2]+3 ＞ 6</dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいいね </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ゴリマスえらいので命中 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>1d6+6+5+4 ダメージ (1D6+6+5+4) ＞ 2[2]+6+5+4 ＞ 17</dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「いつになったら楽しませてくれるウホか」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 75 → 92 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「バカはバナナでも食ってるゴリ～～ッ」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>急激な小物感がｗ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>んではヤマトのターン！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「バナナ食ってんのはお前ゴリ」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>それはそう </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>シンプル素手攻撃で！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>あい！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>G+6 (2D6+6) ＞ 7[1,6]+6 ＞ 13</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+3 回避 (2D6+3) ＞ 10[5,5]+3 ＞ 13</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>お、同値回避！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>お </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>おお </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>おっとぉ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>がんばったねぇ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ついに </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ではゴリベロ動くか～ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ほほえましい目線を送る </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>完全にヤマト燐酸さんインストールしてない？？ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ヤマトもちょっとたのしいので…… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>元気そうだし </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>【ゴリラカッター】<br>行動フェイズに宣言。<br>冷えた空気をも切り裂くカッターで攻撃する。ゴリラカッターは岩砕く。<br>素手攻撃命中時、2d6+【筋力】のダメージを与える。<br>ただし、使用後にHPを-5する。 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ということでゴリラカッターで攻撃ゴリ～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>1d4 対象 (1D4) ＞ 2</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ミワ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>きたわね </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ライバル意識いいぞ～～～ッ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>すごいゴリラカッター何の説明にもなってない </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ひゅーひゅー </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+6 【筋力】 (2D6+6) ＞ 8[6,2]+6 ＞ 14</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>1 </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>なんか砕くことしかわからない </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>？？？？？？？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>1ではない </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>誤送信です </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>さすがに1はｗ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>14！ </dd></dl>
+<dl style="color:#888888" class="zatsudan"><dt>Gウェポン・ゴリベロ</dt><dd>肘のやつです </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>たっか！筋力ウホな？ </dd></dl>
+<dl style="color:#e60033" class="zatsudan"><dt>ヤマト</dt><dd>あ～！かわいいね </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>筋力ウホ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>G+3&gt;=14　【筋力】回避判定 (2D6+3&gt;=14) ＞ 7[3,4]+3 ＞ 10 ＞ 失敗</dd></dl>
+<dl style="color:#607d8b" class="zatsudan"><dt>ガレアーノ</dt><dd>鋭利な肘！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>どんと来るウホ！ </dd></dl>
+<dl style="color:#4caf50" class="zatsudan"><dt>タケシ ホンゴ</dt><dd>絵でみれば分かる </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>S2d6+6 (2D6+6) ＞ 10[5,5]+6 ＞ 16</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>ｗｗｗｗｗ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ん？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>16ダメージです　やばこいつ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>wwwwww </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>やばｗｗｗｗ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ﾃﾞｯｶ！！！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ワァ！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd> </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ ゴリ・ラ・ミワ ] HP : 25 → 9 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「これが！！　オレの！！　力ゴリィィ！！」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「輝（ギラ）ついたイイ肘鉄だねェ……！」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>エネゴリアームの付け根あたりをばっさりやられて膝をつくゴリ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「ミワ！生きてるゴリね！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>次はガレアーノ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>これって体力回復手段はバナナを食べる、ウホな？他ゴリラからはどうすることもできない？ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 92 → 97 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>HP減らすの忘れてたゴリ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>バナナを食べるゴリね！　他ゴリが回復はどうだろう　ちょっと見てみるゴリ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ｻﾝｸｽﾊﾞﾅﾅ…！見つからなくて… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>戦闘中のバナナ回復はできないと書いてあるゴリな……！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>戦闘中はバナ食できないウホ～ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ああ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>仕方ないウホ…！素手攻撃！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>殺られる前に殺るしかないウホ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>G+4 【素手攻撃判定】ｽﾞｰﾑｺﾞﾘﾊﾟﾝﾁで回避に-1 (2D6+4) ＞ 8[6,2]+4 ＞ 12</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>SG+2 回避 (2D6+2) ＞ 5[4,1]+2 ＞ 7</dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>命中！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>1d6+4 【ダメージロール】 (1D6+4) ＞ 6[6]+4 ＞ 10</dd></dl>
+<dl style="color:#ffc107" class="zatsudan"><dt>ゴリ・ラ・ミワ</dt><dd>最終手段だけど生死判定でGP使ってゴリティカルにする方法もあるウホな～ </dd></dl>
+<dl style="color:#888888" class="main"><dt>system</dt><dd>[ Gウェポン・ゴリベロ ] HP : 97 → 107 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>では </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>おや </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>やったか！？ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>やったか！？ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>お </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ぐ、ぐぐぐ……！！」<br>突如として、ゴリベロが苦しみはじめた！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>変身の気配 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ミ、ミワ……タケシ……みんな……！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ご、ゴメンゴリ……オレ、力が抑えきれなくて……ゴリ！」 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「ゴリベロ、あんた正気に戻って…！？」 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「お前ならその力を使いこなせるはずウホ！負けるな！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ううっ……みんな……オ……オレ……ホントは……ホントは……」 </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「気を強く持つウホ…………ゴリベロ…………！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ゴャハーーーーッ！！！！」<br>ゴリベロは突然名状しがたいなにかを投げつけてきた！！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「……！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>【スモーク・シット・スロワー】<br>煙（湯気？）をモクモクと吹き上げるアレを投げつけ、目眩ましをする。<br>確実にシーンを退場する。 </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ナ、ナニィーーーー！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>視界を遮る煙とやばすぎる臭いの中、叫び声だけが君たちの耳に届く……！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ひゅ～～～～～！！！ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「ホントはお前らの足止めが目的ゴリィーーーッ！！　ゴヒャヒャヒャヒャ！！」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「ほう……」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「お前ら、オレをバカだと思ってたゴリねぇ！？　見下してたゴリねぇ～！？」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「でもバカはそっちゴリよォ～～～！！　残念だったゴリねぇ～！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「お前らがオレと"遊戯（あそ）"んでる間に！！　今頃ゴリュはあのニンゲンのボスと一緒に"退場（オサラバ）"ゴリ！！」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>あ、まずい　こいつ生かしてあげられない…… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>「知性（オツム）使ってくれたじゃないか…！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>こんな手のひらドリルある？？？ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>「………………やられたウホな」 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「かわいい」と「消す」は両立するよ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ヤマトさんの狂気が高まっているウホ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「……そうか」フ、と笑う </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>「あ゛？待つゴリルァァァ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>追跡能力たっかｗｗｗｗ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>ｗｗｗｗｗｗｗｗｗｗｗｗｗ </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「心配しなくても、"決着（ケリ）"なら後でつけてやるウホ！！　相応しい"戦場（カリバ）"でなぁ～！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>Gウェポン・ゴリベロ</dt><dd>「あ～ばよウホ！！　ゴヒャヒャヒャ～ッ！！」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>煙が晴れる頃には、もはやゴリベロの姿はなかった…… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「……」す、と瞳をとじる </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>「消す」 </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>草 </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>wwww </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>wwwww </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ごめんね…… </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>wwwwww </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>生かしてあげたかったな…… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>でもヤマトに喧嘩売ったら終わりなんだわ…… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>中の人も止めてあげられないの…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>さて戦闘終了というところで今回はおしまいにするゴリ～～　まだシーンはもう少しあるゴリ！（ふっ飛ばされたウホーデスの容態とか） </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>おつゴリ～！ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>おつゴリ～～～！消す！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>はっ！ボス！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>ウホウホ！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>おつかれさまゴリラー </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>ふっ飛ばされたウホーデスのこと、ときどきでいいから、思い出してください </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>おぼえてるよ……ちょっとだけ…… </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>おつゴリ～！！ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>そんなゴリラもいたなって… </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>宇宙がめぐっても絶対に消そうな </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>魂ごと懸想 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>消そう </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>あいつはいいゴリラだった…… </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>根絶やし森 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ごめんね…… </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>回想（おもいで）にするのが早すぎるウホ </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>想定外に気に入られたと思ったら想定以上に殺意を抱かれたでござる　の巻 </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>寵愛と殺意は両立しますよ？ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ただほら……遊びにしてあげられなくなっちゃったので……ごめんね…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>むちゃくちゃだよｗｗｗ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>かわいく散ってね…… </dd></dl>
+<dl style="color:#888888" class="main"><dt>ゴリマス</dt><dd>つ～ことで明日月曜なので散！　だよ！　おやすみゴ～リラ </dd></dl>
+<dl style="color:#e60033" class="main"><dt>ヤマト</dt><dd>ゴ～リラ！消す♪ </dd></dl>
+<dl style="color:#4caf50" class="main"><dt>タケシ ホンゴ</dt><dd>ご～りら！ </dd></dl>
+<dl style="color:#ffc107" class="main"><dt>ゴリ・ラ・ミワ</dt><dd>良い夢見ゴリラ！ </dd></dl>
+<dl style="color:#607d8b" class="main"><dt>ガレアーノ</dt><dd>グッナイバナナ！ </dd></dl>
+
+</div>
+<footer></footer>
+
+<script>
+const Hide = (checkbox) => {
+  const elmntTarget = document.getElementsByClassName(checkbox.id)
+  for (let intCount = 0; intCount < elmntTarget.length; intCount++) {
+    const message = elmntTarget[intCount]
+    const contexts = message.className.split(' ')
+    let elmntChecked = checkbox.checked
+    contexts.forEach((context) => {
+      const contextCheckbox = document.getElementById(context)
+      if (contextCheckbox) {
+        elmntChecked &= contextCheckbox.checked
+      }
+    })
+    message.style.display = elmntChecked ? 'none' : ''
+  }
+}
+</script>
+</body>
+</html>
